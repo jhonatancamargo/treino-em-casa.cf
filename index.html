@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="style.css">
-  <title>Tudo Pronto!</title>
+  <title>Pressell tik-tok!</title>
 </head>
 <div class="countdown">
     <div class="label">Segundos</div>
@@ -13,7 +13,7 @@
 <script>
     function perfectLink() {
         var urlAfiliado = ''; // só alterar aqui PPU.....
-        var perfectlink  = 'https://bumbum-invejado.cf/' + urlAfiliado + location.search;
+        var perfectlink  = '' + urlAfiliado + location.search;
         return window.open(perfectlink, '_blank');
     }
 </script>
@@ -97,56 +97,11 @@
     }
 </style>
 </html>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPGSJW8HKX"></script>
 <script>
-        (function(b) {
-            var a = {
-                version: "0.0.1",
-                history_api: typeof history.pushState !== "undefined",
-                init: function() {
-                    b.location.hash = "#no-back";
-                    a.configure();
-                },
-                hasChanged: function() {
-                    if (b.location.hash == "#no-back") {
-                        b.location.hash = "#";
-                        b.location.href = "https://bumbuminvejado.com.br/backredirect90desct"; //LINK PARA REDIRECIONAR AQUI
-                    }
-                },
-                checkCompat: function() {
-                    if (b.addEventListener) {
-                        b.addEventListener("hashchange", a.hasChanged, false);
-                    } else {
-                        if (b.attachEvent) {
-                            b.attachEvent("onhashchange", a.hasChanged);
-                        } else {
-                            b.onhashchange = a.hasChanged;
-                        }
-                    }
-                },
-                configure: function() {
-                    if (b.location.hash == "#no-back") {
-                        if (this.history_api) {
-                            history.pushState(null, "", "#");
-                        } else {
-                            b.location.hash = "#";
-                            b.location.href = "https://bumbuminvejado.com.br/backredirect90desct"; //LINK PARA REDIRECIONAR AQUI
-                        }
-                    }
-                    a.checkCompat();
-                    a.hasChanged();
-                }
-            };
-            if (typeof define === "function" && define.amd) {
-                define(function() {
-                    return a;
-                });
-            } else {
-                if (typeof module === "object" && module.exports) {
-                    module.exports = a;
-                } else {
-                    b.noback = a;
-                }
-            }
-            a.init();
-        }(window));
-    </script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EPGSJW8HKX');
+</script>
