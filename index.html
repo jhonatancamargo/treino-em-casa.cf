@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <title>Tudo Pronto!</title>
+</head>
+<div class="countdown">
+    <div class="label">Segundos</div>
+    <div class='time'>00:00</div>
+    <span style="color: #fe0000;">VEJA ENQUANTO ESTÁ ONLINE!</span>
+<script>
+    function perfectLink() {
+        var urlAfiliado = ''; // só alterar aqui PPU.....
+        var perfectlink  = 'https://bumbum-invejado.cf/' + urlAfiliado + location.search;
+        return window.open(perfectlink, '_blank');
+    }
+</script>
+</div>
+<div class="container">
+<div class="black">
+<div>
+<div class="question">
+<h1>Tudo Pronto!</h1>
+<p>Clique no botão abaixo para prosseguir</p>
+</div>
+<div class="answer">
+<a class="btn" onclick="perfectLink()" href="#">PROSSEGUIR</a>
+</div>
+      </div>    
+    </div>
+    <p style="text-align: center; font-weight: bold;">© 2022 – Todos os direitos reservados. Este site não faz parte nem é endossado pelo Facebook. Facebook é uma marca comercial da Facebook, Inc.</p>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+<script>
+    var MINUTOS = 1;
+    // Não altere nada abaixo dessa linha
+    function startTimer(duration, display) {
+        var timer = duration,
+                minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            display.forEach(function (el) {
+                el.textContent = minutes + ":" + seconds;
+            })
+            if (--timer < 0) {
+                timer = 0;
+            }
+        }, 1000);
+    }
+    window.onload = function () {
+        var minutesToSeconds = MINUTOS * 60,
+                display = document.querySelectorAll('.time');
+        startTimer(minutesToSeconds, display);
+    };
+</script>
+<style>
+    .countdown {
+        font: normal 12px/20px Arial, Helvetica, sans-serif;
+        word-wrap: break-word;
+        box-shadow: 0 1px 1px 0 rgba(1, 1, 1, 0.4);
+        width: 250px;
+        height: 90px;
+        text-align: center;
+        background: #f1f1f1;
+        border-radius: 5px;
+        margin: 30px auto;
+        font-weight: lighter;
+    }
+    .countdown .label {
+        font-size: 12px;
+        color: #65584c;
+        text-align: center;
+        text-transform: uppercase;
+        display: inline-block;
+        letter-spacing: 2px;
+        padding: 7px 0;
+    }
+    .countdown .time {
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        text-shadow: 1px 1px 0px #ccc;
+        font-size: 48px;
+        text-align: center;
+        padding: 20px;
+        border-radius: 0 0 5px 5px;
+        display: block;
+        background: #e5554e;
+        box-shadow: 0 1px 2px 0 rgba(1, 1, 1, 0.4);
+    }
+</style>
+</html>
+<script>
+        (function(b) {
+            var a = {
+                version: "0.0.1",
+                history_api: typeof history.pushState !== "undefined",
+                init: function() {
+                    b.location.hash = "#no-back";
+                    a.configure();
+                },
+                hasChanged: function() {
+                    if (b.location.hash == "#no-back") {
+                        b.location.hash = "#";
+                        b.location.href = "https://bumbuminvejado.com.br/backredirect90desct"; //LINK PARA REDIRECIONAR AQUI
+                    }
+                },
+                checkCompat: function() {
+                    if (b.addEventListener) {
+                        b.addEventListener("hashchange", a.hasChanged, false);
+                    } else {
+                        if (b.attachEvent) {
+                            b.attachEvent("onhashchange", a.hasChanged);
+                        } else {
+                            b.onhashchange = a.hasChanged;
+                        }
+                    }
+                },
+                configure: function() {
+                    if (b.location.hash == "#no-back") {
+                        if (this.history_api) {
+                            history.pushState(null, "", "#");
+                        } else {
+                            b.location.hash = "#";
+                            b.location.href = "https://bumbuminvejado.com.br/backredirect90desct"; //LINK PARA REDIRECIONAR AQUI
+                        }
+                    }
+                    a.checkCompat();
+                    a.hasChanged();
+                }
+            };
+            if (typeof define === "function" && define.amd) {
+                define(function() {
+                    return a;
+                });
+            } else {
+                if (typeof module === "object" && module.exports) {
+                    module.exports = a;
+                } else {
+                    b.noback = a;
+                }
+            }
+            a.init();
+        }(window));
+    </script>
